@@ -1,0 +1,55 @@
+{
+  "name": "strapi-plugins-dev",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "postinstall": "lerna bootstrap",
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "ngrok": "ngrok http 1337"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "ngrok": "^4.3.3",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@shopify/app-bridge": "^3.4.3",
+    "@shopify/app-bridge-react": "^3.4.3",
+    "@shopify/app-bridge-utils": "^3.4.3",
+    "@shopify/polaris": "^10.10.1",
+    "@strapi/plugin-i18n": "^4.5.5",
+    "@strapi/strapi": "^4.5.5",
+    "babel-loader": "^9.0.0",
+    "better-sqlite3": "^7.6.2",
+    "lerna": "^6.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.74.0"
+  },
+  "strapi": {
+    "uuid": null
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  }
+}

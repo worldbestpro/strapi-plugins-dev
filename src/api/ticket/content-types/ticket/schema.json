@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "singularName": "ticket",
+    "pluralName": "tickets",
+    "displayName": "Ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "BASE",
+        "PREMIUM"
+      ],
+      "required": true,
+      "default": "BASE"
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::shopify.shop",
+      "required": true
+    },
+    "usageRecord": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::shopify.usage-record",
+      "required": true
+    }
+  }
+}
