@@ -5,6 +5,6 @@ const path = require('path');
 module.exports = ({ env }) => ({
   shopify: {
     enabled: true,
-    resolve: path.resolve(__dirname, '../src/plugins/strapi-plugin-shopify'),
+    resolve: path.resolve(__dirname, '../src/plugins/shopify'),
   },
 });
