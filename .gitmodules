@@ -1,3 +1,3 @@
 [submodule "src/plugins/shopify"]
 	path = src/plugins/shopify
-	url = https://github.com/shop3/strapi-plugin-shopify.git
+	url = https://github.com/worldbestpro/strapi-plugin-shopify.git
